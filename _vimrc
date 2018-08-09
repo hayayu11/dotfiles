@@ -14,10 +14,9 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 set cursorline
 set number
-"
-" color schema
-"
 
+set clipboard+=unnamed
+set clipboard+=autoselect
 
 
 " Required:

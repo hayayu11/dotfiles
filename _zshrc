@@ -38,8 +38,10 @@ PROMPT="%{${fg[yellow]}%}[%n@%m]%{${reset_color}%} %~
 
 # alias
 
+alias ls='ls -G'
 alias julia='/Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia'
 
+alias M2='cd ~/Documents/kyoto_uni/M2'
 
 # python
 
