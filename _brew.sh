@@ -1,0 +1,4 @@
+
+#brew doctor
+#brew update
+
