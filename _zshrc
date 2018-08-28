@@ -9,6 +9,9 @@ export SAVEHIST=100000
 setopt hist_ignore_dups
 setopt share_history
 setopt EXTENDED_HISTORY
+setopt print_eight_bit
+setopt hist_save_nodups
+
 
 #補完で小文字でも大文字にマッチ
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -38,9 +41,11 @@ PROMPT="%{${fg[yellow]}%}[%n@%m]%{${reset_color}%} %~
 
 # alias
 
+alias mkdir='mkdir -p'
+alias mv='mv -i'
+alias rm='rm -i'
 alias ls='ls -G'
 alias julia='/Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia'
-
 alias M2='cd ~/Documents/kyoto_uni/M2'
 
 # python
@@ -48,6 +53,11 @@ alias M2='cd ~/Documents/kyoto_uni/M2'
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+export RBENV_ROOT=$HOME/.rbenv
+export PATH=$RBENV_ROOT/bin::$PATH
+eval "$(rbenv init -)"
+
 
 # zplug
 source /usr/local/opt/zplug/init.zsh

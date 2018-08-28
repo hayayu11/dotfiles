@@ -1,2 +1,4 @@
 neobundle.vim
+syntastic
+unite.vim
 vim-colors-solarized

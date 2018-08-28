@@ -31,7 +31,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 
 NeoBundle 'altercation/vim-colors-solarized'
-
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/syntastic' 
 "
 "
 
@@ -49,5 +50,10 @@ syntax enable
 set background=dark 
 colorscheme solarized
 
-
+let OSTYPE = system('uname')
+if OSTYPE == "Linux\n"
+	noremap y y:wv<CR>
+	noremap p :rv!<CR>p
+endif
+set viminfo='50,\"3000,:0,n~/.viminfo
 
